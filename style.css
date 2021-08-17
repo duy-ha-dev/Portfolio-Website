@@ -311,7 +311,13 @@ p {
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#skills .service-item {
+
+
+/* https://codepen.io/jekkilekki/pen/QjNorb FOR NEW CARD FLIPS!!! */
+
+
+
+ #skills .service-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -322,9 +328,11 @@ p {
 	background-image: url(https://i.pinimg.com/originals/b7/56/7b/b7567b0bdaaca709a652ef2587fc9d10.png);
 	background-size: cover;
 	margin: 10px 5%;
-	position: relative;
+	position: aboslute;
 	z-index: 1;
 	overflow: hidden;
+	perspective: 1000px;
+	
 }
 #skills .service-item::after {
 	content: '';
@@ -352,6 +360,41 @@ p {
 	color: white;
 	text-align: left;
 }
+
+/* -----------------------DEPRECATED-----------------------*/
+  /* This container is needed to position the front and back side */
+  /* #skills .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  } */
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* #skills .service-item:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  } */
+  
+  /* Position the front and back side */
+  /* #skills .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; 
+	backface-visibility: hidden;
+  } */
+  
+  /* Style the front side (fallback if image is missing) */
+  /* #skills .flip-card-front {
+	color: black;
+  } */
+  
+  /* Style the back side */
+  /* #skills .flip-card-back {
+	transform: rotateY(180deg); } */
+
+
 /* End Services Section */
 
 /* Projects section */
