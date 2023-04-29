@@ -99,7 +99,7 @@
                 </div>
                 <div class="wow fadeInUp">
                     <img src="assets/images/plot1.png" class="w-100 mb-5">
-                    <p class="section-text-light">As our goal is to predict song popularity, we hope to see that all of the dataset variables, either directly or indirectly, contribute to the overall popularity value of a Taylor Swift song.</p>
+                    <p class="section-text-ct">As our goal is to predict song popularity, we hope to see that all of the dataset variables, either directly or indirectly, contribute to the overall popularity value of a Taylor Swift song.</p>
                 </div>
             </div>
         </div>
@@ -238,19 +238,23 @@
     <section class="bg-primary hiro-section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 wow fadeInUp">
+                <div class="wow fadeInUp">
                     <h2 class="section-title mb-3">Exploring the Albums</h2>
                     <p class="section-text-ct">In the plot below, we look at the overall speechiness trends across her discography and also trends within each album.</p>
                 </div>
-                <div class=" wow fadeInUp">
-                    <img src="assets/images/plot3.png" class="w-100 mb-5">
-                    <p class="section-text-light">Most of her songs score a relatively low speechiness, but her songs that do incorporate highler amoung of speechiness are more often popular.</p>
+                <div class="wow fadeInUp">
+                    
+                    <iframe src="assets/interactives\visualization3.html" height="800" width="1200" style="display: block; margin: 0 auto;"> </iframe>
+                    <!-- <img src="assets/images/plot3.png" class="w-100 mb-5"> -->
+                    <p class="section-text-ct">This interactive graph shows that, while most of Taylor Swift's songs have a low speechiness score, the songs that have a higher speechiness score tend to be more popular. This suggests that there may be a positive correlation between speechiness and popularity in Taylor Swift's music.</p>
                 </div>
-                <div class="col-sm-6 wow fadeInUp">
-                    <img src="assets/images/plot3.gif" class="w-100 mb-5">
-                    <p class="section-text-light">Animation gif of Popularity vs. Speechiness trends on individual albums.</p>
+                <div class="wow fadeInUp">
+                    <iframe src="assets/interactives\visualization3b.html" height="800" width="1200" style="display: block; margin: 0 auto;"> </iframe>
+                    <!-- <img src="assets/images/plot3.gif" class="w-100 mb-5"> -->
                 </div>
-
+                <div> 
+                    <p class="section-text-ct">It is important to note, before concluding this sectional analysis of popularity and speechiness, that Taylor Swift re-added all of her music to Spotify in 2017. This means that it is very probable that each song's popularity is affected by recency bias. In the context of music streaming, this means that people are more likely to listen to songs that have been released recently; thus, it is likely that many of her older songs will not be played as often on Spotify as her songs released around 2017, such as her album 1989.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -278,7 +282,7 @@
             <div class="row">
                 <div class="col-md-5 wow fadeInUp">
                     <h2 class="section-title">Most Effective Features</h2>
-                    <p class="section-text-light">An interactive plot is constructed to compare two important features for popularity; speechiness and loudness. </p>
+                    <p class="section-text-light">Using the two most significant features found above, an interactaction plot is constructed to compare speechiness and loudness. We see that loudness and speechiness do contribute interactions that result in higher popularity. We can conclude that these two features are what makes her songs popular according to Spotify's data. </p>
                 </div>
                 <div class="col-md-7 wow fadeInRight">
                     <div class="wow fadeInUp">
