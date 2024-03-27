@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taylor Swift Data Viz Showcase</title>
+    <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+</head>
+
+<body>
+    <div class="hiro-loader"></div>
+    <header class="hiro-header home-header" id="top">
+        <div class="container wow fadeInUp">
+            <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel" data-interval="3500">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="Eras"><span>What Makes a Taylor Swift Song Popular</span></h1>
+                                <h2 class="link-hover-fx" data-animation="animated fadeInRight">Introduction</h2>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">In this project, I am interested in exploring this <a href="https://www.kaggle.com/datasets/thespacefreak/taylor-swift-spotify-data" class="link-hover-fx" >dataset</a> containing information on all her album songs collected through Spotify's API. The goal for this exploration is to gain insights into factors that contribute to the popularity of Taylor Swift's music and to identifty key features that make up a song of hers. </p>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">To achieve this objective, I plan to define several key column variables based on the data available in the dataset and investigate their relationship, or lack thereof, to the popularity of the release. By analyzing the correlation between these variables and the popularity of the songs, I hope to identify the most significant factors that contribute to the success of Taylor Swift's music.</p>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">The findings from this analysis will help me predict the trends in Taylor Swift's music and enable me to identify the most popular songs in future albums. Expansion on this project (such incorporating samples from other top artists) will be useful for individuals who are interested in understanding the factors that influence the popularity of music and predicting future trends and the dynamics of the music industry</p>
+                                <h5 class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">My Top 3</h5>
+                                <ul class="carousel-item-social-links " data-animation="animated fadeInRight">
+                                    <li>
+                                        <a class="link-hover-fx">Champange Problems</a>
+                                    </li>
+                                    <li>
+                                        <a class="link-hover-fx">New Romantics</a>
+                                    </li>
+                                    <li>
+                                        <a class="link-hover-fx">The Other Side of the Door</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/swft.png" alt="Some PNG of Taylor Swift" class="img-fluid w-100 rounded" width="372px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hiro-section" id="services">
+        <div class="container">
+            <div class="service-section">
+                <div class="justify-content-center wow fadeInUp">
+                    <h2 class="section-title mb-3">Theory Mapping Dataset Variables</h2>
+                    <p class="section-text-ct">By defining all of the dataset variables using <a class="link-hover-fx" href="https://developer.spotify.com/documentation/web-api">Spotify's WebAPI documentation</a> and interpretting the distinct relationship between each of them, a theory map is first constructed to aid as an outline for project's feature exploration.</p>
+                    <h5 class="link-hover-fx" data-animation="animated fadeInRight">Variable Definitions</h5>
+                                <ul class="carousel-item-social-links" data-animation="animated fadeInRight">
+                                    <li>
+                                        <b class="link-hover-fx">name</b> Name of song
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">album</b> Name of album
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">artist</b> Name of artist/s involved
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">popularity</b> The popularity of the track. The value will be between 0 and 100, with 100 being the most popular.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">danceability</b> Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">acousticness</b> A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">energy</b> A perceptual measure of intensity and activity
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">instrumentalness</b> Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">liveness</b> Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">loudness</b> The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typically range between -60 and 0 db.
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">speechiness</b> Presence of spoken words in a track (if the speechiness of a song is above 0.66, it is probably made of spoken words, a score between 0.33 and 0.66 is a song that may contain both music and words, and a score below 0.33 means the song does not have any speech)
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">valence</b> A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+                                    </li>
+                                    <li>
+                                        <b class="link-hover-fx">tempo</b> Beats per minute
+                                    </li>
+                                </ul>
+                </div>
+                <div class="wow fadeInUp">
+                    <img src="assets/images/plot1.png" class="w-100 mb-5">
+                    <p class="section-text-ct">As our goal is to predict song popularity, we hope to see that all of the dataset variables, either directly or indirectly, contribute to the overall popularity value of a Taylor Swift song.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section hiro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 wow fadeInUp">
+                    <h2 class="section-title">Substantive Regression Effects</h2>
+                    <p class="section-text-light">Here we plot a substantive regression plot comparing several features to popularity. We see that speechiness and loudness both have strong relation with popularity.</p>
+                    <div>
+                        <a class="carousel-control-prev" href="#hiroTeamCarousel" role="button" data-slide="prev">
+                            <img src="assets/images/arrow_left.png" alt="left arrow" width="45px">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#hiroTeamCarousel" role="button" data-slide="next">
+                            <img src="assets/images/Arrow_right.png" alt="right arrow" width="45px">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 wow fadeInRight">
+                    <div id="hiroTeamCarousel" class="hiro-team-carousel carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_1.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Danceability</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_2.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Acousticness</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_3.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Energy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_4.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Liveness</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_5.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Loudness</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_6.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Speechiness</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_7.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Valence</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div>
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/plot2_8.png" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Popularity vs.</h6>
+                                                <p class="team-member-title">Tempo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary hiro-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="wow fadeInUp">
+                    <h2 class="section-title mb-3">Exploring the Albums</h2>
+                    <p class="section-text-ct">In the plot below, we look at the overall speechiness trends across her discography and also trends within each album.</p>
+                </div>
+                <div class="wow fadeInUp">
+                    
+                    <iframe src="assets/interactives\visualization3.html" height="800" width="1200" style="display: block; margin: 0 auto;"> </iframe>
+                    <!-- <img src="assets/images/plot3.png" class="w-100 mb-5"> -->
+                    <p class="section-text-ct">This interactive graph shows that, while most of Taylor Swift's songs have a low speechiness score, the songs that have a higher speechiness score tend to be more popular. This suggests that there may be a positive correlation between speechiness and popularity in Taylor Swift's music.</p>
+                </div>
+                <div class="wow fadeInUp">
+                    <iframe src="assets/interactives\visualization3b.html" height="800" width="1200" style="display: block; margin: 0 auto;"> </iframe>
+                    <!-- <img src="assets/images/plot3.gif" class="w-100 mb-5"> -->
+                </div>
+                <div> 
+                    <p class="section-text-ct">It is important to note, before concluding this sectional analysis of popularity and speechiness, that Taylor Swift re-added all of her music to Spotify in 2017. This means that it is very probable that each song's popularity is affected by recency bias. In the context of music streaming, this means that people are more likely to listen to songs that have been released recently; thus, it is likely that many of her older songs will not be played as often on Spotify as her songs released around 2017, such as her album 1989.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="career-section hiro-section bg-transparent">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="section-title wow fadeInLeft">
+                        Album Popularity 
+                    </h2>
+                    <div class="project-card justify-content-center wow fadeInUp">
+                        <img src="assets/images/plot4.png" alt="Project" class="project-thumbnail">
+                    </div>
+                </div>
+                <div class="wow fadeInRight">
+                    <p class="section-text-ct mb-5">This coefficient plot depicts the popularity of all the albums with the baseline being 1989. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section hiro-section" id="works">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 wow fadeInUp">
+                    <h2 class="section-title">Most Effective Features</h2>
+                    <p class="section-text-light">Using the two most significant features found above, an interactaction plot is constructed to compare speechiness and loudness. We see that loudness and speechiness do contribute interactions that result in higher popularity. We can conclude that these two features are what makes her songs popular according to Spotify's data. </p>
+                </div>
+                <div class="col-md-7 wow fadeInRight">
+                    <div class="wow fadeInUp">
+                        <img src="assets/images/plot5.png" class="w-100 mb-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section hiro-section">
+        <div class="container wow fadeInUp">
+            <h6 class="font-weight-semibold mb-4 mb-md-0">Created by Duy Ha</h6>
+            <h2 class="section-title">A DSCI-304 Project</h2>
+            <div class="contact-address">
+                <div class="row">
+                    <div class="col-md-2 d-flex align-items-end">
+                        <a href="#top" class="go-top-btn">
+                            <img src="assets/images/arrow_up@1x.svg" alt="arrow up">
+                            <span class="sr-only">Go to top</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/vendors/wowjs/wow.min.js"></script>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

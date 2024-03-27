@@ -1,226 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="icon" href="https://www.duy-ha.xyz/favicon.ico" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Duy's ePortfolio</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Duy Ha Portfolio</title> <!-- https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/-->>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,600,600i,700,700i|Prompt:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
+
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#home"><h1><span>D</span>uy <span>H</span>a</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#home" data-after="Home">Home</a></li>
-            <li><a href="#skills" data-after="Service">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Duy Ha</a></h1>
+        <ul>
+          <li><strong>Email:</strong> <span>duyh77686@gmail.com</span></li>
+          <li><strong>Phone:</strong> <span>(210) 303-2222</span></li>
+          <li><strong>Location:</strong> <span>Houston, San Antonio</span></li>
+        </ul>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.instagram.com/dwee.ha/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/duy-hoang-ha/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://drive.google.com/file/d/1pMgrojEk_y7qfonu7-aJKw7LfXcB_7qG/view?usp=sharing" target="_blank" class="resume"><i class="bx bx-file-blank"></i></a>
         </div>
       </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-  </section>
-  <!-- End Header -->
+  </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
 
-  <!-- Hero Section  -->
-  <section id="home">
-    <div class="home container">
-      <div>
-        <h1>Hello! <span></span></h1>
-        <h1>My name is <span></span></h1>
-        <h1>Duy <span></span></h1>
-        <h3>(pronounced dwee) <span></span></h3>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
+      <h1>Duy Ha</h1>
+      <p>I'm a <span class="typed" data-typed-items="Student, Researcher, Programmer, Developer"></span></p>
     </div>
-  </section>
-  <!-- End Hero Section  -->
+  </section><!-- End Hero -->
 
-  <!-- Service Section -->
-  <section id="skills">
-    <div class="skills container">
-      <div class="service-top">
-        <h1 class="section-title">Sk<span>i</span>lls</h1>
-        <p>This brief section showcases some of my notable skills, which I hope one day will progress from <b style="color:crimson">skills</b> to <b style="color:crimson">skills</b> through valuable career experience.</p>
+  <main id="main">
+
+
+
+    <!-- ======= Facts Section ======= -->
+    <section id="about" class="facts">
+      <div class="container">
+        <div class="section-title">
+          <h2>about me</h2>
+          <div class="about">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <p>
+                    <span class="factTyped" data-factTyped-items="Growing up in the tech hub of Silicon Valley sparked my early interest in technology, which has continued to flourish throughout my education. I am currently a junior at Rice University, where I am pursuing a B.S. in Computer Science on a full-ride scholarship. I have a strong academic track record, graduating as valedictorian and simultaneously earning an Associate of Arts degree from Judson Early College Academy. In addition to my coursework, I have gained valuable experience through both research and industry internships. My goal is to combine my passion for research and industry by making significant contributions to the field of machine learning and artificial intelligence through industrial research. I am excited to use my skills and knowledge to make a positive impact in the tech industry and be a part of shaping its future."></span>
+                  </p>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="profile">
+                    <p>
+                      <span class="title-s">Name: </span>
+                      <span>Duy Ha</span>
+                    </p>
+
+                    <p>
+                      <span class="title-s">Profile: </span>
+                      <span>Rice University Student</span>
+                    </p>
+
+                    <p>
+                      <span class="title-s">Email: </span>
+                      <span>duyh77686@gmail.com</span>
+                    </p>
+
+                    <p>
+                      <span class="title-s">Phone: </span>
+                      <span>(210) 303-2222</span>
+                    </p>
+                    
+
+                  </div>
+
+
+                  <div class="row skills-content">
+
+                    <div data-aos="fade-up">
+          
+                      <div class="progress">
+                        <span class="skill">Python <i class="val">85%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+          
+                      <div class="progress">
+                        <span class="skill">Java <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+          
+                      <div class="progress">
+                        <span class="skill">C <i class="val">65%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+      
+                      <div class="progress">
+                        <span class="skill">HTML/CSS <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+          
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+
+    
+            </div>
+            </div>  
+          </div>
+        </div>
+
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-cup-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Cold brews </strong>per year</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-music-note"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years</strong> teaching myself piano</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headphones"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Percent</strong> of all Taylor Swift listeners</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-controller"></i>
+              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Roblox</strong> games made growing up</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://cdn0.iconfinder.com/data/icons/forgen-seo-1/64/bug-256.png"/></div>
-          <h2>Programming</h2>
-          <p>My most comfortable language is Python, but I also have experience with Java through FTC Robotics and Lua through ROBLOX's game engine. Recently, I developed knowledge in HTML and CSS from working on this website. Through a Coursera course from Google CSSI, I earned an Algorithmic Thinking certification from UC San Diego.</p>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <h3><i class="bi bi-cone-striped"></i>Currently under construction. Please review resume section for high-level overview!<i class="bi bi-cone-striped"></i></h3>
         </div>
 
-        <div class="service-item">
-          <div class="icon"><img src="https://cdn0.iconfinder.com/data/icons/forgen-seo-1/64/calender-256.png"/></div>
-          <h2>Organization</h2>
-          <p>The switch to online schooling in my first semester of college has taught me how much of a difference good organizational skills can make. To streamline and document the steps in my life, I have used an all-in-one workspace service called Notion. I was able to create my own databases and systems for project management tailored to my every need. </p>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Summer 2022: Intern @ Google"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="service-item">
-          <div class="icon"><img src="https://cdn0.iconfinder.com/data/icons/forgen-seo-1/64/content-delivery-256.png"/></div>
-          <h2>Communication</h2>
-          <p>Communication is one of the most important soft skills I strive to improve every day. From business professional workplaces to tutoring centers, I am accustomed to the varying communicative techniques needed to succeed in these environments</p>
+      </div>
+    </section>
+     -->
+
+     <section id="portfolio" class="portfolio-mf sect-pt4 route">
+      <div class="section-title">
+        <h2> Projects </h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="domonte-portfolio-details.html">
+                    <img src="assets/img/domonte_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Computational Modeling of Reward- and Fear-Behaviors </h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Undergraduate Research Assistant</span> / <span class="w-date">Fall 2023-Ongoing</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="domonte-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="genie-portfolio-details.html">
+                    <img src="assets/img/genie_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Fast Genomic Short Read Mapper </h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Capstone Project</span> / <span class="w-date">Fall 2023</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="genie-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="amd-portfolio-details.html">
+                    <img src="assets/img/amd_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Deployable and Generalizable Genomic Machine Learning Package </h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Rice D2K DSCI 535 Capstone</span> / <span class="w-date">Fall 2023</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="amd-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="project-lol_ml_analysis.html">
+                    <img src="assets/img/project-lol.jpg" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Reporting Win Predictions in League of Legends </h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Personal ML Project</span> / <span class="w-date">Fall 2022</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="project-lol_ml_analysis.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="emlt-portfolio-details.html">
+                    <img src="assets/img/emlt_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Efficient Machine Learning Toolbox (EMLT)</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">ML Research Project</span> / <span class="w-date">Summer 2021</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="emlt-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="astros-portfolio-details.html">
+                    <img src="assets/img/astro_project.jpg" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Autonomous Drones and Massive MIMOs</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">ECE Research Internship</span> / <span class="w-date">Summer 2021</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="astros-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="site-portfolio-details.html"> 
+                    <img src="assets/img/website_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Website Design and Server Management</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Personal Website (this site!!)</span> / <span class="w-date">Winter 2020</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="site-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="work-box">
+                <div class="work-img">
+                  <a href="iv-portfolio-details.html"> 
+                    <img src="assets/img/ivstand_project.png" alt="" class="img-fluid">
+                  </a>
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Portable IV Stand</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Group Engineering Project</span> / <span class="w-date">Fall 2020 Semester</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="iv-portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Full Stack Skills</h2>
+          <p>Through my academics and internships, I have achieved a solid foundation in both frontend and backend workflow and architecture.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">HTML/CSS <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">TypeScript <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume (Spring 2024)</h2>
+          <a href="https://drive.google.com/file/d/1evPlfKDZ_uHLqv548IXSToxhpxUEW5q4/view?usp=sharing" class="resume">Download</a>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Duy Ha</h4>
+              <p><em>Accomplished and dedicated computer science student at Rice University with 4+ years of programming experience, eagered to learn in the growing technology sector. </em></p>
+              <ul>
+                <li>1605 Rice Blvd, Houston, TX</li>
+                <li>(210) 303-2222</li>
+                <li>duyh77686@gmail.com, dhh3@rice.edu</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science &amp; Computer Science</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Rice University, Houston, TX</em></p>
+              <p>My extracurriculars include TAing, Academic Advisor, Vietnamese Student Association, CS Club, Rice Robotics, Rice Eclipse, and more.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate of Liberal Arts</h4>
+              <h5>2016 - 2020</h5>
+              <p><em>Northeast Lakeview College, Universal City, TX</em></p>
+              <p>Rececived Associates along with my high school diplomma as part of an early college program.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineering Intern</h4>
+              <h5>Summer 2023</h5>
+              <p><em>Google, Mountain View, CA </em></p>
+              <ul>
+                <li>Designed and implemented new measurement library within Google Fi application using open-source networking stack Cronet
+                  to more accurately gauge users’ network performance by means of zero-rating throughput and latency estimations</li>
+                <li>Documented comprehensive accuracy analysis of WiFi and cellular quality metrics by integrating a network connectivity
+                  assessment into an experimental Android application and comparing with the existing test methodology </li>
+                <li>Improved approximation error on high-traffic (> 10Mbps) packets by 120% from existing throughput measurements</li>
+                <li>Utilized Java/Kotlin dependency injections, async, futures, and multithreading to deliver Android client features</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Engineering (STEP) Intern</h4>
+              <h5>Summer 2022</h5>
+              <p><em>Google, Mountain View, CA </em></p>
+              <ul>
+                <li>Worked closely with the team to improve overall advertiser accessibility by extending functionalities of a full stack
+                  web application through several Google infrastructures</li>
+                <li>Delivered several launch-blocking UI features using frontend Closure Templates and HTML/Sass through collaboration with UX designer and frontend engineers </li>
+                <li>Implemented read/write connection between Google F1 DB and Search backend using Java and Guice dependency injection</li>
+                <li>Received team recognition through a Google Peer Bonus for conducting exceptional progress toward product launch</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Electrical Engineering Research Intern</h4>
+              <h5>Summer 2021</h5>
+              <p><em>Rice Network Groups, Houston, TX</em></p>
+              <ul>
+                <li>Improved building process of the Autonomous, Sensing, Tetherless Networked Drones (ASTRO) platform</li>
+                <li>Designed and implemented drone mission codes for autonomous experimentation</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Utilized RENEWLab open-source mMIMO toolbox and experimented beamforming on ASTRO drones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+
     </div>
-  </section>
-  <!-- End Service Section -->
+  </footer><!-- End  Footer -->
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Portable IV Stand</h1>
-            <h2>Team IV League (Fall 2020 Semester)</h2>
-            <p>Along with three other student teammates and a design mentor, we developed an intuitive and portable IV stand, strictly following the Engineering Design Process. Our client was the Barretos Cancer Hospital, Brazil's most advanced oncological hospital. The hospital needs cost-efficient and portable IV stands to treat at-home patients. IV League's final design utilizes durable and cheap materials such as HDPE and aluminium. Along with functioning like a hospital-grade IV stand, it weighs 3.2kg and fits within 1.82 cubic foot when compressed.</p>
-            <p><b><a href="https://rice.digication.com/duy-h/engi-120-220" style="color:crimson">More Detailed Documentation</a></b></p>
-            <p>Link may require a Digication account until the ePortfolio is public...</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/TeamIVLeague.png" alt="img">
-          </div>
-        </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-        <!--These are the lines that are responsible for this section you're reading!!!-->
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website Design and Server Management</h1>
-            <h2><a href ="https://duy-ha.xyz/" style="color:white">duy-ha.xyz </a> (Winter 2020)</h2>
-            <p>In collaboration with my two friends, we worked on owning and developing our very own websites! We installed Debian on a VPS and set up our web server with nginx. Each of us run distinct sites on our server thanks to virtual hosts. We set up additional SSH cryptographic keypairs in order protect our server and websites. This website was coded from a respected <a href="https://github.com/WebCifar/one-page-website-html-css-project-for-practice" style="color:crimson">GitHub respository</a>, from which I learned HTML and CSS. We have developed web design and system administration skills as a result of configuring and managing our website and server.</p>
-            <p><b><a href="https://github.com/duy-ha-dev/Portfolio-Website" style="color:crimson">Stay updated on my GitHub!</a></b></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/html_screenshot.png" alt="img">
-          </div>
-        </div>
-        <!--
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </section>
-  
-  <!-- End Projects Section -->
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/senior_year.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Student at Rice University</h2>
-        <p> I was raised in San Jose, and my fascination for technology developed early on in my childhood as a consequence of Silicon Valley's cultural influences. I carried this fascination with me when my family moved to San Antonio in the latter years of education. I graduated Judson Early College Academy with the honor of valedictorian along with an Associate of Arts at Northeast Lakeview College. Currently, I am freshman at Rice University attending with a full-ride scholarship. I aim to graduate with a double major in Computer Science and Electrical Computer Engineering. </p>
-        <a href="./pdf/Duy_2020_CSResume.pdf" class="cta" target="_blank">View Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 210 303 2222</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>duyh77686@gmail.com</h2>
-            <h2>dhh3@rice.edu</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>San Antonio, Houston</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>D</span>uy <span>H</span>a</h1></div>
-      <h2>Social Media</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/duythegenius"><img src="https://www.flaticon.com/svg/static/icons/svg/725/725289.svg"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/numberonemistake/"><img src="https://www.flaticon.com/svg/static/icons/svg/725/725278.svg"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/duy-hoang-ha/"><img src="https://www.flaticon.com/svg/static/icons/svg/725/725337.svg"/></a>
-        </div>
-        <!-- Fourth social media commented out
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div> -->
-      </div>
-      <p>I will be updating this site as I continue to gain valuable experience</p>
-      <p>Last Updated: December 30, 2020</p>
-      <p>Copyright © 2020 Duy. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
 </body>
+
 </html>
